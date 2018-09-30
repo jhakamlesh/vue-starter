@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="$style.container">
     <vue-data-table-search v-model="searchTerm"
                            v-if="showSearch"
                            :placeholder="placeholder" />
@@ -207,9 +207,12 @@
 <style lang="scss" module>
   @import "../../styles";
 
+  .container {
+    overflow-x: auto;
+  }
+
   .vueDataTable {
-    overflow-x: scroll;
-    width:      100%;
+    width: 100%;
   }
 
   .noResults {
