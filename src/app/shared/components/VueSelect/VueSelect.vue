@@ -181,8 +181,8 @@
 
   .icon {
     position: absolute;
-    right:    24px;
-    top:      20px;
+    right:    $space-unit * 3;
+    top:      $space-unit * 1.5;
     height:   auto;
     width:    auto;
 

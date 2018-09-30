@@ -85,8 +85,8 @@
 
   .icon {
     position:   absolute;
-    margin-top: 4px;
-    right:      24px;
+    margin-top: $space-unit * 0.5;
+    right:      $space-unit;
 
     &:before, &:after {
       content:          "";

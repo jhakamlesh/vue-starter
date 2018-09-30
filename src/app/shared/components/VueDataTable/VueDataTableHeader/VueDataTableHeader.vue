@@ -4,7 +4,7 @@
     <th v-for="(column, idx) in columns" v-if="column.visible"
         :key="idx"
         :class="$style.column"
-        :style="{flexBasis: `${columnWidth}`}"
+        :style="{width: `${columnWidth}`}"
         @click="onClick(column)">{{ column.title }}
       <vue-icon-sort v-if="!sortKey && !isActive(column.sortKey)" />
       <vue-icon-sort-up v-if="isActive(column.sortKey) && sortDirection === 'asc'" />
@@ -55,29 +55,25 @@
   @import "../../../styles";
 
   .vueDataTableHeader {
-    display:        flex;
-    flex-direction: row;
-    box-shadow:     $panel-shadow;
-    border:         1px solid $divider-color;
-    background:     $bg-color;
-    font-weight:    700;
-    background:     $panel-bg;
-    min-width:      600px;
+    box-shadow:  $panel-shadow;
+    border:      1px solid $divider-color;
+    background:  $bg-color;
+    font-weight: 700;
+    background:  $panel-bg;
+    min-width:   600px;
 
     tr {
-      width:          100%;
-      display:        flex;
-      flex-direction: row;
-      min-width:      600px;
+      width:     100%;
+      min-width: 800px;
     }
   }
 
   .column {
-    flex:         1 1 auto;
     border-right: 1px solid $divider-color;
     padding:      $space-unit $space-unit * 2;
     cursor:       pointer;
     user-select:  none;
+    min-width:    150px;
 
     &:hover {
       i {

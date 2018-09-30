@@ -11,9 +11,9 @@
 
 <script lang="ts">
   export default {
-    name:       'VueTooltip',
-    props:      {
-      tip:      {
+    name:     'VueTooltip',
+    props:    {
+      tip: {
         type:     String,
         required: true,
       },
@@ -23,7 +23,7 @@
         show: false,
       };
     },
-    computed:   {
+    computed: {
       cssClasses() {
         const classes: string [] = [this.$style.vueTooltip];
 
@@ -38,7 +38,7 @@
         return classes;
       },
     },
-    methods:    {
+    methods:  {
       onEnter() {
         this.show = true;
       },
@@ -95,7 +95,7 @@
       border-left:  6px solid transparent;
       content:      '';
       height:       0;
-      top:          -5px;
+      top:          -10px;
       left:         8px;
       width:        0;
     }

@@ -47,26 +47,18 @@
 
           <vue-button>Default</vue-button>
           <vue-button disabled>Default</vue-button>
-          <!--<vue-button loading>Loading</vue-button>-->
-          <vue-button pulse>Default</vue-button>
           <br />
           <br />
           <vue-button primary>Primary</vue-button>
           <vue-button primary disabled>Primary</vue-button>
-          <!--<vue-button primary loading>Loading</vue-button>-->
-          <vue-button primary pulse>Primary</vue-button>
           <br />
           <br />
           <vue-button accent>Accent</vue-button>
           <vue-button accent disabled>Accent</vue-button>
-          <!--<vue-button accent loading>Loading</vue-button>-->
-          <vue-button accent pulse>Accent</vue-button>
           <br />
           <br />
           <vue-button warn>Warn</vue-button>
           <vue-button warn disabled>Warn</vue-button>
-          <!--<vue-button warn loading>Loading</vue-button>-->
-          <vue-button warn pulse>Warn</vue-button>
         </vue-grid-item>
       </vue-grid-row>
 
@@ -200,7 +192,8 @@
             :value="selectedOption"
             @input="selectChange" />
 
-          <p>Multi</p>
+          <br />
+          Multi
           <vue-select
             name="select2"
             id="select2"
@@ -351,7 +344,8 @@
             </vue-accordion-item>
           </vue-accordion>
 
-          <p>Multi</p>
+          <br />
+          Multi
           <vue-accordion multiple>
             <vue-accordion-item
               title="Item 1">

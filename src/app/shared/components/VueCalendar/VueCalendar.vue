@@ -365,7 +365,7 @@
 
           span {
             position: relative;
-            top:      0.5rem;
+            top:      $space-unit - 0.1;
 
             @include media(tabletPortrait) {
               top: 15%;

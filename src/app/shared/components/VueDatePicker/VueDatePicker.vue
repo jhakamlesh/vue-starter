@@ -133,8 +133,6 @@
   }
 
   .calendar {
-    margin: 0;
-
     @include media(tabletPortrait) {
       width: $calendar-max-width;
 
