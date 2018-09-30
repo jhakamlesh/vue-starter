@@ -81,6 +81,16 @@
       margin-top: $space-unit;
     }
 
-    @include background-gradient($brand-accent, $brand-primary-light, -135deg);
+    @include background-gradient($brand-primary, $brand-primary-light, -135deg);
+
+    h2 {
+      color: $text-color-inverse;
+    }
+
+    :global {
+      .vuePanel {
+        background: $bg-color;
+      }
+    }
   }
 </style>

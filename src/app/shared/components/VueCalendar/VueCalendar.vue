@@ -460,7 +460,7 @@
   }
 
   .disabledDay {
-    opacity:     0.6;
+    opacity:     0.4;
     user-select: none;
     outline:     transparent;
   }

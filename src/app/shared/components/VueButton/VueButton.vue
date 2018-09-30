@@ -5,7 +5,7 @@
     @click="onClick"
     v-bind="$attrs">
     <slot v-if="loading === false" />
-    <vue-loader v-if="loading === true" />
+    <vue-loader :class="$style.loader" v-if="loading === true" />
   </button>
 </template>
 
@@ -207,16 +207,9 @@
     }
 
     :global {
-      .vueLoader {
-        position:    absolute;
-        left:        50%;
-        margin-left: -($space-unit * 2);
-        top:         $space-unit;
-
-        .vueLoaderCircle {
-          &:before {
-            background: $button-default-color;
-          }
+      .vueLoaderCircle {
+        &:before {
+          background: $button-default-color;
         }
       }
     }
@@ -249,5 +242,12 @@
       opacity:    .2;
       transition: 0s;
     }
+  }
+
+  .loader {
+    position:    absolute;
+    left:        50%;
+    margin-left: -($space-unit * 2);
+    top:         $space-unit * 0.5;
   }
 </style>

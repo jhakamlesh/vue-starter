@@ -100,7 +100,7 @@ $screen-small-desktop-gutter: $space-unit * 4;
 $screen-large-desktop-gutter: $space-unit * 4;
 
 /* AppNavBar*/
-$nav-bar-bg: linear-gradient(to bottom, $bg-color 0%, lighten($bg-color, 2%) 50%, $bg-color 100%);
+$nav-bar-bg: $bg-color;
 $nav-bar-color: $text-color;
 $nav-bar-width: 100%;
 $nav-bar-height: $space-unit * 10;
@@ -109,10 +109,10 @@ $nav-bar-index: 1000;
 $nav-bar-bg-transition: opacity $transition-duration ease-in-out;
 $nav-bar-bg-accent-transition: transform $transition-duration ease-in-out;
 $nav-bar-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-$nav-bar-accent-bg: linear-gradient(to left, $brand-primary 0%, $brand-primary-light 100%);
-$nav-bar-accent-shadow: $nav-bar-shadow;
+$nav-bar-accent-bg: linear-gradient(to left, $brand-primary 0%, $brand-primary-lighter 100%);
+$nav-bar-accent-shadow: none;
 $nav-bar-hamburger-bg: $border-color;
-$nav-bar-menu-border-color: lighten($bg-color, 5%);
+$nav-bar-menu-border-color: $border-color;
 $nav-bar-menu-bg: transparent;
 
 /* Button */
@@ -314,10 +314,10 @@ $calendar-body-padding: $space-unit $space-unit * 2;
 
 $calendar-arrow-color: $brand-primary;
 $calendar-arrow-bg: $calendar-bg;
-$calendar-arrow-hover-bg: $bg-color;
+$calendar-arrow-hover-bg: $bg-color-variant;
 
 $calendar-day-border-radius: 50%;
-$calendar-day-hover: $bg-color;
+$calendar-day-hover: $bg-color-variant;
 
 $calendar-current-day-bg: $brand-primary;
 $calendar-current-day-color: $bg-color;
@@ -332,13 +332,14 @@ $notifications-max-width: $space-unit * 50;
 
 $notification-padding: $space-unit * 2 $space-unit * 5 $space-unit * 2 $space-unit * 2;
 $notification-margin: 0 0 $space-unit 0;
-$notification-shadow: $modal-shadow;
+$notification-shadow: none;
 $notification-max-height: $space-unit * 10;
 $notification-close-bg: $bg-color;
 $notification-close-width: $space-unit * 5;
 $notification-close-cross-color: $brand-primary;
 
 $notification-default-bg: $bg-color-variant;
+$notification-default-border: 1px solid $border-color;
 
 /* Autocomplete */
 $autocomplete-bg: $bg-color;

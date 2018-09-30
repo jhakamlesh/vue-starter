@@ -65,11 +65,23 @@
       width:  $font-size-h1;
       fill:   $brand-accent;
       margin: 0 $space-unit * 2;
+
+      &:hover {
+        fill: $brand-accent-light;
+      }
     }
 
     small {
       display: inline-block;
       margin:  $space-unit * 2 0;
+    }
+
+    a {
+      color: $brand-accent;
+
+      &:hover {
+        color: $brand-accent-light;
+      }
     }
   }
 </style>

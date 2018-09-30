@@ -25,7 +25,7 @@
     />
 
     <vue-icon-search v-show="isLoading === false" />
-    <vue-loader :class="$style.loader" accent v-show="isLoading === true" />
+    <vue-loader :class="$style.loader" primary v-show="isLoading === true" />
 
     <ul
       ref="resultContainer"

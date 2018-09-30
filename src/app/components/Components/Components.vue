@@ -47,18 +47,22 @@
 
           <vue-button>Default</vue-button>
           <vue-button disabled>Default</vue-button>
+          <vue-button loading>Default</vue-button>
           <br />
           <br />
           <vue-button primary>Primary</vue-button>
           <vue-button primary disabled>Primary</vue-button>
+          <vue-button primary loading>Default</vue-button>
           <br />
           <br />
           <vue-button accent>Accent</vue-button>
           <vue-button accent disabled>Accent</vue-button>
+          <vue-button accent loading>Accent</vue-button>
           <br />
           <br />
           <vue-button warn>Warn</vue-button>
           <vue-button warn disabled>Warn</vue-button>
+          <vue-button warn loading>Warn</vue-button>
         </vue-grid-item>
       </vue-grid-row>
 
