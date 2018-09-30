@@ -95,7 +95,7 @@
       border-left:  6px solid transparent;
       content:      '';
       height:       0;
-      top:          -10px;
+      top:          -12px;
       left:         8px;
       width:        0;
     }

@@ -81,6 +81,6 @@
       margin-top: $space-unit;
     }
 
-    @include background-gradient($brand-accent, $brand-light-primary, -135deg);
+    @include background-gradient($brand-accent, $brand-primary-light, -135deg);
   }
 </style>

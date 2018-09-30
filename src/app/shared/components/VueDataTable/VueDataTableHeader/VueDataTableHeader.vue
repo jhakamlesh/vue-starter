@@ -56,7 +56,7 @@
 
   .vueDataTableHeader {
     box-shadow:  $panel-shadow;
-    border:      1px solid $divider-color;
+    border:      1px solid $border-color;
     background:  $bg-color;
     font-weight: 700;
     background:  $panel-bg;
@@ -69,7 +69,7 @@
   }
 
   .column {
-    border-right: 1px solid $divider-color;
+    border-right: 1px solid $border-color;
     padding:      $space-unit $space-unit * 2;
     cursor:       pointer;
     user-select:  none;
@@ -77,7 +77,7 @@
 
     &:hover {
       i {
-        fill:    $brand-accent;
+        fill:    $brand-primary;
         opacity: 1;
       }
     }
@@ -94,7 +94,7 @@
 
     :global {
       .fa-sort-up, .fa-sort-down {
-        color:   $brand-accent;
+        color:   $brand-primary;
         opacity: 1;
       }
     }

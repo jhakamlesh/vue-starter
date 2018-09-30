@@ -98,7 +98,7 @@
     vertical-align:              middle;
     touch-action:                manipulation;
     cursor:                      pointer;
-    border:                      1px solid transparent;
+    border:                      $button-default-border;
     white-space:                 nowrap;
     text-transform:              uppercase;
     min-width:                   $button-min-width;
@@ -117,13 +117,17 @@
     user-select:                 none;
 
     &:active {
-      background: $button-default-hover-bg;
       box-shadow: $button-active-shadow;
+    }
+
+    &:hover {
+      background: $button-default-hover-bg;
     }
 
     &.primary {
       color:      $button-primary-color;
       background: $button-primary-bg;
+      border:     $button-primary-border;
 
       &:hover {
         background: $button-primary-hover-bg;
@@ -139,6 +143,7 @@
     &.accent {
       color:      $button-accent-color;
       background: $button-accent-bg;
+      border:     $button-accent-border;
 
       &:hover {
         background: $button-accent-hover-bg;
@@ -154,6 +159,7 @@
     &.warn {
       color:      $button-warn-color;
       background: $button-warn-bg;
+      border:     $button-warn-border;
 
       &:hover {
         background: $button-warn-hover-bg;

@@ -334,8 +334,8 @@
   }
 
   .body {
-    border-bottom: $calendar-body-border;
-    padding:       $calendar-body-padding;
+    border:  $calendar-body-border;
+    padding: $calendar-body-padding;
 
     table {
       display: block;
@@ -372,7 +372,7 @@
             }
 
             @include media(largeDesktop) {
-              top: 12%;
+              top: 17%;
             }
           }
         }
@@ -436,7 +436,7 @@
     cursor:      default;
     text-align:  center;
     flex:        1 0 70%;
-    font-weight: 500;
+    font-weight: $font-weight;
   }
 
   .currentDay {
@@ -490,6 +490,8 @@
     padding:         $space-unit * 2;
     display:         flex;
     justify-content: flex-end;
+    border:          $calendar-body-border;
+    border-top:      none;
 
     button {
       margin-bottom: 0;

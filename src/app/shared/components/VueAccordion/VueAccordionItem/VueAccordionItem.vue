@@ -74,13 +74,13 @@
   }
 
   .header {
-    background: $accordion-item-header-bg;
-    box-shadow: $accordion-item-header-shadow;
-    padding:    $accordion-item-header-padding;
-    border-top: $accordion-item-header-border-top;
-    position:   relative;
-    z-index:    1;
-    cursor:     pointer;
+    background:    $accordion-item-header-bg;
+    box-shadow:    $accordion-item-header-shadow;
+    padding:       $accordion-item-header-padding;
+    border:        $accordion-item-header-border;
+    position:      relative;
+    z-index:       1;
+    cursor:        pointer;
   }
 
   .icon {

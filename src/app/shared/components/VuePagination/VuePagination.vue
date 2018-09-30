@@ -118,11 +118,11 @@
 
   .next {
     &:before {
-      transform: translate(1.8rem, 0.8rem) rotate(135deg);
+      transform: translate(2rem, 0.8rem) rotate(135deg);
     }
 
     &:after {
-      transform: translate(1.8rem, 1.8rem) rotate(-135deg)
+      transform: translate(2rem, 1.8rem) rotate(-135deg)
     }
   }
 </style>

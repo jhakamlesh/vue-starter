@@ -115,9 +115,10 @@ small {
 }
 
 a {
-  color: $brand-accent;
+  color: $link-color;
+  font-weight: 400;
 
   &:hover {
-    color: darken($brand-accent, 5%);
+    color: darken($link-color, 5%);
   }
 }

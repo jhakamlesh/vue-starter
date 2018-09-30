@@ -52,7 +52,7 @@
   .quickStart {
     display:    block;
     text-align: center;
-    @include background-gradient($brand-dark-primary, $brand-primary, -31deg);
+    @include background-gradient($brand-primary, $brand-primary-light, -31deg);
 
     :global {
       .vuePanelBody {

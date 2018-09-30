@@ -804,14 +804,13 @@
     padding:     $nav-bar-height 0 $nav-bar-height * 0.5;
     text-align:  center;
     text-shadow: 0 5px 10px rgba(0, 0, 0, 0.33);
-    @include background-gradient($brand-dark-primary, $brand-accent, 152deg);
+    background:  $brand-primary;
+    color:       $text-color-inverse
   }
 
   .collapseDemo {
     padding:    $space-unit * 2;
     background: $panel-bg;
-    box-shadow: $panel-shadow;
-    color:      #FFF
   }
 
   .age {

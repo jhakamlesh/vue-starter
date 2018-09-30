@@ -90,6 +90,7 @@
       cursor:           pointer;
       background-color: transparent;
       position:         relative;
+      border:           1px solid transparent;
 
       .bg {
         position:                   absolute;
@@ -105,6 +106,10 @@
       }
 
       &.active {
+        border:        $tab-group-border;
+        border-bottom: none;
+        top:           1px;
+
         .title {
           color: $tab-group-header-item-hover-color;
         }
@@ -124,5 +129,6 @@
 
   .body {
     padding: $tab-group-padding;
+    border:  $tab-group-border;
   }
 </style>
