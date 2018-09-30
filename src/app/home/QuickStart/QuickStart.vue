@@ -52,7 +52,7 @@
   .quickStart {
     display:    block;
     text-align: center;
-    @include background-gradient($brand-primary, $brand-primary-light, -31deg);
+    background: $brand-primary;
 
     h2 {
       color: $text-color-inverse;

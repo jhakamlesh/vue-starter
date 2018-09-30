@@ -73,6 +73,7 @@
   .enterpriseReady {
     display:    block;
     text-align: center;
+    background: $brand-primary;
 
     i {
       display:    inline-block;
@@ -80,8 +81,6 @@
       width:      $font-size-h1;
       margin-top: $space-unit;
     }
-
-    @include background-gradient($brand-primary, $brand-primary-light, -135deg);
 
     h2 {
       color: $text-color-inverse;

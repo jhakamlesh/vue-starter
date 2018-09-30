@@ -15,32 +15,47 @@
   export default {
     name:       'VueButton',
     props:      {
-      primary:  {
+      primary:   {
         type:     Boolean,
         required: false,
         default:  false,
       },
-      accent:   {
+      secondary: {
         type:     Boolean,
         required: false,
         default:  false,
       },
-      warn:     {
+      tertiary:  {
         type:     Boolean,
         required: false,
         default:  false,
       },
-      disabled: {
+      info:      {
         type:     Boolean,
         required: false,
         default:  false,
       },
-      loading:  {
+      success:   {
         type:     Boolean,
         required: false,
         default:  false,
       },
-      pulse:    {
+      warn:      {
+        type:     Boolean,
+        required: false,
+        default:  false,
+      },
+      danger:      {
+        type:     Boolean,
+        required: false,
+        default:  false,
+      },
+      disabled:  {
+        type:     Boolean,
+        required: false,
+        default:  false,
+      },
+      loading:   {
         type:     Boolean,
         required: false,
         default:  false,
@@ -64,20 +79,32 @@
           classes.push(this.$style.primary);
         }
 
-        if (this.accent) {
-          classes.push(this.$style.accent);
+        if (this.secondary) {
+          classes.push(this.$style.secondary);
+        }
+
+        if (this.tertiary) {
+          classes.push(this.$style.tertiary);
+        }
+
+        if (this.info) {
+          classes.push(this.$style.info);
+        }
+
+        if (this.success) {
+          classes.push(this.$style.success);
         }
 
         if (this.warn) {
           classes.push(this.$style.warn);
         }
 
-        if (this.disabled === true || this.loading === true) {
-          classes.push(this.$style.disabled);
+        if (this.danger) {
+          classes.push(this.$style.danger);
         }
 
-        if (this.pulse) {
-          classes.push(this.$style.pulse);
+        if (this.disabled === true || this.loading === true) {
+          classes.push(this.$style.disabled);
         }
 
         return classes;
@@ -124,54 +151,6 @@
       background: $button-default-hover-bg;
     }
 
-    &.primary {
-      color:      $button-primary-color;
-      background: $button-primary-bg;
-      border:     $button-primary-border;
-
-      &:hover {
-        background: $button-primary-hover-bg;
-      }
-
-      :global {
-        .vueLoaderPath {
-          stroke: $button-primary-color;
-        }
-      }
-    }
-
-    &.accent {
-      color:      $button-accent-color;
-      background: $button-accent-bg;
-      border:     $button-accent-border;
-
-      &:hover {
-        background: $button-accent-hover-bg;
-      }
-
-      :global {
-        .vueLoaderPath {
-          stroke: $button-accent-color;
-        }
-      }
-    }
-
-    &.warn {
-      color:      $button-warn-color;
-      background: $button-warn-bg;
-      border:     $button-warn-border;
-
-      &:hover {
-        background: $button-warn-hover-bg;
-      }
-
-      :global {
-        .vueLoaderPath {
-          stroke: $button-warn-color;
-        }
-      }
-    }
-
     &.disabled,
     &[disabled],
     fieldset[disabled] & {
@@ -181,28 +160,6 @@
 
       &:hover {
         box-shadow: none;
-      }
-    }
-
-    &.pulse {
-      animation: loading-animation 1s infinite ease-in-out both;
-
-      @keyframes loading-animation {
-        0% {
-          transform: scale(1);
-        }
-        25% {
-          transform: scale(0.98);
-        }
-        50% {
-          transform: scale(1);
-        }
-        75% {
-          transform: scale(0.98);
-        }
-        100% {
-          transform: scale(1);
-        }
       }
     }
 
@@ -249,5 +206,117 @@
     left:        50%;
     margin-left: -($space-unit * 2);
     top:         $space-unit * 0.5;
+  }
+
+  .primary {
+    color:      $button-primary-color;
+    background: $button-primary-bg;
+    border:     $button-primary-border;
+
+    &:hover {
+      background: $button-primary-hover-bg;
+    }
+
+    :global {
+      .vueLoaderPath {
+        stroke: $button-primary-color;
+      }
+    }
+  }
+
+  .secondary {
+    color:      $button-secondary-color;
+    background: $button-secondary-bg;
+    border:     $button-secondary-border;
+
+    &:hover {
+      background: $button-secondary-hover-bg;
+    }
+
+    :global {
+      .vueLoaderPath {
+        stroke: $button-secondary-color;
+      }
+    }
+  }
+
+  .tertiary {
+    color:      $button-tertiary-color;
+    background: $button-tertiary-bg;
+    border:     $button-tertiary-border;
+
+    &:hover {
+      background: $button-tertiary-hover-bg;
+    }
+
+    :global {
+      .vueLoaderPath {
+        stroke: $button-tertiary-color;
+      }
+    }
+  }
+
+  .info {
+    color:      $button-info-color;
+    background: $button-info-bg;
+    border:     $button-info-border;
+
+    &:hover {
+      background: $button-info-hover-bg;
+    }
+
+    :global {
+      .vueLoaderPath {
+        stroke: $button-info-color;
+      }
+    }
+  }
+
+  .success {
+    color:      $button-success-color;
+    background: $button-success-bg;
+    border:     $button-success-border;
+
+    &:hover {
+      background: $button-success-hover-bg;
+    }
+
+    :global {
+      .vueLoaderPath {
+        stroke: $button-success-color;
+      }
+    }
+  }
+
+  .warn {
+    color:      $button-warn-color;
+    background: $button-warn-bg;
+    border:     $button-warn-border;
+
+    &:hover {
+      background: $button-warn-hover-bg;
+    }
+
+    :global {
+      .vueLoaderPath {
+        stroke: $button-warn-color;
+      }
+    }
+  }
+
+  .danger {
+    color:      $button-danger-color;
+    background: $button-danger-bg;
+    border:     $button-danger-border;
+
+    &:hover {
+      background: $button-danger-hover-bg;
+    }
+
+    :global {
+      .vueLoaderPath {
+        stroke: $button-danger-color;
+      }
+    }
   }
 </style>

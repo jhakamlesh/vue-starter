@@ -5,35 +5,32 @@ $font-family: 'Source Sans Pro', Helvetica, sans-serif;
 $space-unit: 0.8rem;
 
 /* Brand */
-$brand-primary: #1357AA;
-$brand-primary-light: lighten($brand-primary, 10%);
-$brand-primary-lighter: lighten($brand-primary-light, 10%);
-
-$brand-accent: #E8CB50;
-$brand-accent-light: lighten($brand-accent, 10%);
-$brand-accent-lighter: lighten($brand-accent-light, 10%);
-
-$brand-warn: #AC2016;
-$brand-warn-light: lighten($brand-warn, 10%);
-$brand-warn-lighter: lighten($brand-warn-light, 10%);
-
-$brand-gray: #333;
-$brand-gray-light: lighten($brand-gray, 10%);
-$brand-gray-lighter: lighten($brand-gray-light, 10%);
+$brand-primary: #3D70B2;
+$brand-secondary: #5596E6;
+$brand-tertiary: #00B4A0;
+$brand-info: #5AAAFA;
+$brand-success: #5AA700;
+$brand-warn: #EFC100;
+$brand-danger: #E71D32;
 
 /* Background Colors */
 $bg-color: #FFF;
-$bg-color-variant: darken($bg-color, 10%);
-$bg-color-inverse: $brand-gray;
-$bg-color-variant-inverse: lighten($bg-color-inverse, 5%);
+$bg-color-variant: #F5F7FA;
+$bg-color-inverse: #8C9BA5;
+$bg-color-variant-inverse: DFE3E6;
 
 /* Text Colors */
-$text-color: $bg-color-inverse;
-$text-color-inverse: $bg-color;
+$text-color: #152935;
+$text-secondary-color: #5A6872;
+$text-color-inverse: #EBF6FF;
+$text-secondary-color-inverse: #5A6872;
+
+/* Links */
 $link-color: $brand-primary;
+$link-font-weight: 400;
 
 /* Borders */
-$border-color: darken($bg-color, 15%);
+$border-color: #CED1D4;
 $border-radius: $space-unit * 0.25;
 
 /* Animation Language */
@@ -109,7 +106,7 @@ $nav-bar-index: 1000;
 $nav-bar-bg-transition: opacity $transition-duration ease-in-out;
 $nav-bar-bg-accent-transition: transform $transition-duration ease-in-out;
 $nav-bar-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-$nav-bar-accent-bg: linear-gradient(to left, $brand-primary 0%, $brand-primary-lighter 100%);
+$nav-bar-accent-bg: $brand-primary;
 $nav-bar-accent-shadow: none;
 $nav-bar-hamburger-bg: $border-color;
 $nav-bar-menu-border-color: $border-color;
@@ -138,15 +135,35 @@ $button-primary-bg: $brand-primary;
 $button-primary-hover-bg: darken($button-primary-bg, 5%);
 $button-primary-border: 1px solid darken($button-primary-bg, 10%);
 
-$button-accent-color: $text-color;
-$button-accent-bg: $brand-accent;
-$button-accent-hover-bg: darken($button-accent-bg, 5%);
-$button-accent-border: 1px solid darken($button-accent-bg, 10%);
+$button-secondary-color: $text-color-inverse;
+$button-secondary-bg: $brand-secondary;
+$button-secondary-hover-bg: darken($button-secondary-bg, 5%);
+$button-secondary-border: 1px solid darken($button-secondary-bg, 10%);
 
-$button-warn-color: $text-color-inverse;
+$button-tertiary-color: $text-color-inverse;
+$button-tertiary-bg: $brand-tertiary;
+$button-tertiary-hover-bg: darken($button-tertiary-bg, 5%);
+$button-tertiary-border: 1px solid darken($button-tertiary-bg, 10%);
+
+$button-info-color: $text-color-inverse;
+$button-info-bg: $brand-info;
+$button-info-hover-bg: darken($button-info-bg, 5%);
+$button-info-border: 1px solid darken($button-info-bg, 10%);
+
+$button-success-color: $text-color-inverse;
+$button-success-bg: $brand-success;
+$button-success-hover-bg: darken($button-success-bg, 5%);
+$button-success-border: 1px solid darken($button-success-bg, 10%);
+
+$button-warn-color: $text-color;
 $button-warn-bg: $brand-warn;
 $button-warn-hover-bg: darken($button-warn-bg, 5%);
 $button-warn-border: 1px solid darken($button-warn-bg, 10%);
+
+$button-danger-color: $text-color-inverse;
+$button-danger-bg: $brand-danger;
+$button-danger-hover-bg: darken($button-danger-bg, 5%);
+$button-danger-border: 1px solid darken($button-danger-bg, 10%);
 
 /* Loader */
 $loader-size: $space-unit * 4;
@@ -168,7 +185,7 @@ $panel-header-title-font-size: inherit;
 $panel-header-title-font-weight: 600;
 $panel-header-subtitle-font-size: inherit;
 $panel-header-subtitle-font-weight: 300;
-$panel-header-subtitle-color: $brand-gray-lighter;
+$panel-header-subtitle-color: $text-secondary-color;
 
 $panel-body-padding: $space-unit $space-unit * 2;
 $panel-body-font-size: inherit;
@@ -180,7 +197,7 @@ $panel-footer-padding: $space-unit $space-unit * 2;
 $input-border-bottom: 1px solid $border-color;
 $input-background-color: transparent;
 $input-padding: $space-unit 0;
-$input-margin: $space-unit * 2 0 0 0;
+$input-margin: 0;
 $input-font-family: $font-family;
 $input-font-size: inherit;
 $input-color: $text-color;
@@ -197,6 +214,7 @@ $input-placeholder-active-height: $space-unit * 2;
 
 $input-bar-height: 2px;
 $input-bar-color: $brand-primary;
+$input-bar-error-color: $brand-danger;
 
 $input-message-height: $space-unit * 3;
 $input-message-padding: $space-unit * 0.5 0 0 0;
@@ -234,7 +252,7 @@ $tab-item-transition: transform $transition-duration linear;
 /* CheckBox */
 $checkbox-color: $text-color;
 $checkbox-padding: 0;
-$checkbox-margin: $space-unit 0;
+$checkbox-margin: 0;
 $checkbox-size: $space-unit * 3;
 $checkbox-bg: $bg-color;
 $checkbox-border: 1px solid $brand-primary;
@@ -288,7 +306,7 @@ $pagination-arrow-disabled-color: $bg-color;
 /* Select */
 $select-bg: $bg-color-variant;
 $select-shadow: $panel-shadow;
-$select-margin: $space-unit * 2 0;
+$select-margin: 0;
 $select-padding: $space-unit $space-unit * 2;
 $select-border: $accordion-item-header-border;
 $select-color: $text-color;
@@ -367,11 +385,23 @@ $badge-default-bg: $button-default-bg;
 $badge-primary-color: $button-primary-color;
 $badge-primary-bg: $button-primary-bg;
 
-$badge-accent-color: $button-accent-color;
-$badge-accent-bg: $button-accent-bg;
+$badge-secondary-color: $button-secondary-color;
+$badge-secondary-bg: $button-secondary-bg;
+
+$badge-tertiary-color: $button-tertiary-color;
+$badge-tertiary-bg: $button-tertiary-bg;
+
+$badge-info-color: $button-info-color;
+$badge-info-bg: $button-info-bg;
+
+$badge-success-color: $button-success-color;
+$badge-success-bg: $button-success-bg;
 
 $badge-warn-color: $button-warn-color;
 $badge-warn-bg: $button-warn-bg;
+
+$badge-danger-color: $button-danger-color;
+$badge-danger-bg: $button-danger-bg;
 
 /* Carousel */
 $carousel-min-height: 500px;

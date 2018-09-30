@@ -26,13 +26,13 @@
             <vue-badge>New</vue-badge>
           </h1>
           <h2>Headline 2
-            <vue-badge primary>New</vue-badge>
+            <vue-badge>New</vue-badge>
           </h2>
           <h3>Headline 3
-            <vue-badge accent>New</vue-badge>
+            <vue-badge>New</vue-badge>
           </h3>
           <h4>Headline 4
-            <vue-badge warn>New</vue-badge>
+            <vue-badge>New</vue-badge>
           </h4>
           <h5>Headline 5
             <vue-badge>New</vue-badge>
@@ -40,6 +40,15 @@
           <h6>Headline 6
             <vue-badge>New</vue-badge>
           </h6>
+
+          <vue-badge>Default</vue-badge>
+          <vue-badge primary>Primary</vue-badge>
+          <vue-badge secondary>Secondary</vue-badge>
+          <vue-badge tertiary>Tertiary</vue-badge>
+          <vue-badge info>Info</vue-badge>
+          <vue-badge success>Success</vue-badge>
+          <vue-badge warn>Warn</vue-badge>
+          <vue-badge danger>Danger</vue-badge>
         </vue-grid-item>
 
         <vue-grid-item class="vueGridItem">
@@ -55,14 +64,34 @@
           <vue-button primary loading>Default</vue-button>
           <br />
           <br />
-          <vue-button accent>Accent</vue-button>
-          <vue-button accent disabled>Accent</vue-button>
-          <vue-button accent loading>Accent</vue-button>
+          <vue-button secondary>Secondary</vue-button>
+          <vue-button secondary disabled>Secondary</vue-button>
+          <vue-button secondary loading>Secondary</vue-button>
+          <br />
+          <br />
+          <vue-button tertiary>Tertiary</vue-button>
+          <vue-button tertiary disabled>Tertiary</vue-button>
+          <vue-button tertiary loading>Tertiary</vue-button>
+          <br />
+          <br />
+          <vue-button info>Info</vue-button>
+          <vue-button info disabled>Info</vue-button>
+          <vue-button info loading>Info</vue-button>
+          <br />
+          <br />
+          <vue-button success>Success</vue-button>
+          <vue-button success disabled>Success</vue-button>
+          <vue-button success loading>Success</vue-button>
           <br />
           <br />
           <vue-button warn>Warn</vue-button>
           <vue-button warn disabled>Warn</vue-button>
           <vue-button warn loading>Warn</vue-button>
+          <br />
+          <br />
+          <vue-button danger>Danger</vue-button>
+          <vue-button danger disabled>Danger</vue-button>
+          <vue-button danger loading>Danger</vue-button>
         </vue-grid-item>
       </vue-grid-row>
 
@@ -820,7 +849,7 @@
   .age {
     > div {
       height:     $space-unit;
-      background: $brand-accent;
+      background: $brand-secondary;
       margin-top: $space-unit * 1.5;
       display:    inline-block;
     }

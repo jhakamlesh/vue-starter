@@ -115,8 +115,8 @@ small {
 }
 
 a {
-  color: $link-color;
-  font-weight: 400;
+  color:       $link-color;
+  font-weight: $link-font-weight;
 
   &:hover {
     color: darken($link-color, 5%);

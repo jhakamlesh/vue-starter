@@ -78,12 +78,11 @@
 
   .stage {
     min-height: 100vh;
-    background: linear-gradient(171deg, $brand-primary 0%, $brand-primary-light 100%);
+    background: $brand-primary;
     overflow:   hidden;
     position:   relative;
     text-align: center;
     color:      $text-color-inverse;
-    @include background-gradient($brand-primary-lighter, $brand-primary-light, 171deg);
   }
 
   .accent {
@@ -93,7 +92,7 @@
     box-shadow: $nav-bar-shadow;
     position:   absolute;
     transition: transform 250ms linear;
-    @include background-gradient($brand-primary-lighter, $brand-primary, -171deg);
+    background: $brand-primary;
 
     @include media(tabletPortrait) {
       transform: skewX(-33deg) translateX(100%);
@@ -116,7 +115,7 @@
     box-shadow: $nav-bar-shadow;
     position:   absolute;
     transition: transform 250ms linear;
-    @include background-gradient($brand-primary, $brand-primary-lighter, -171deg);
+    background: $brand-primary;
 
     @include media(tabletPortrait) {
       transform: skewX(37deg) translateX(-29%);

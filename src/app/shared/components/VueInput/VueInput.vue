@@ -168,18 +168,21 @@
   }
 
   .error {
+    label {
+      color: $input-bar-error-color;
+    }
     input {
-      border-bottom-color: $brand-warn;
+      border-bottom-color: $input-bar-error-color;
     }
     input:focus ~ label,
     input.hasValue ~ label {
-      color: $brand-warn;
+      color: $input-bar-error-color;
     }
 
     .bar {
       &:before,
       &:after {
-        background: $brand-warn;
+        background: $input-bar-error-color;
       }
     }
   }

@@ -63,12 +63,8 @@
     i {
       height: $font-size-h1;
       width:  $font-size-h1;
-      fill:   $brand-accent;
+      fill:   $brand-secondary;
       margin: 0 $space-unit * 2;
-
-      &:hover {
-        fill: $brand-accent-light;
-      }
     }
 
     small {
@@ -77,11 +73,7 @@
     }
 
     a {
-      color: $brand-accent;
-
-      &:hover {
-        color: $brand-accent-light;
-      }
+      color: $brand-secondary;
     }
   }
 </style>

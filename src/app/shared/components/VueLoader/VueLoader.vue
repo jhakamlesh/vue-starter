@@ -105,7 +105,7 @@
 
     &.accent {
       .path {
-        stroke: $brand-accent;
+        stroke: $brand-secondary;
       }
     }
 

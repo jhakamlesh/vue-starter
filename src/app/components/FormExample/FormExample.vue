@@ -4,6 +4,8 @@
       This example uses <a href="https://github.com/baianat/vee-validate">vee-validate</a> for field validation.
     </small>
     <br />
+    <br />
+    <br />
     <vue-grid-row>
       <vue-grid-item>
         <vue-input
